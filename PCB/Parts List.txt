@@ -1,0 +1,20 @@
+1x --DC-DC STEPUP MT3608 Coverter
+1x --1N5819-DC Diode
+1x --seedStudio XIAO ESP32-S3
+1x --MP2307-MINI-360 DC-DC converter
+6x --IV-3 VFD tube !!NOT IV-3A!!
+4x --0805 SMD Resistor 10k
+6x --0805 SMD Resistor 100k
+6x --0805 SMD Resistor 50k
+6x --0805 SMD Resistor 220k
+7x --74HC595 Shift Register (SO16)
+6x --MIC2981/82YWM Driver IC
+6x --MMBT2222A
+6x --MMBT3906
+4x --SW_1825027-1 Switches
+1x --HUSB238 Adafruit 5807
+1x --PCB
+
+
+
+
