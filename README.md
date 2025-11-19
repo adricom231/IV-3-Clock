@@ -14,7 +14,7 @@ If anybody wants to make one of these clocks themselfs here are some things that
 
 2.The holes for the tube legs are very very tight so if you can go ahead and widen them
 
-3.The enable hiside switches at the bottom (the 2 transisior thing) is kinda not working IDK WHY HELP
+3.The enable hiside switches at the bottom (the 2 transisior thing) is kinda not working
 
 If anybody needs the original f3d files or just the project files message me, right now i only leave gerber files and photos here.
 
