@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rok przestępny sprawdzato-inator</h1>
+    <p>Podaj rok:</p><input type="number" id="in1">
+    <button onclick="sprawdz()">Sprawdź</button>
+    <p id="wynik"></p>
+    <hr color="red">
+    <h2>Przekątna kwadratu inator</h2>
+    <p>Podaj długość boku kwadratu</p><input type="number" id="in2">
+    <button onclick="przekatnaKwadratuCheck()">Sprawdź</button>
+    <p id="w2"></p>
+    <p id="w3"></p>
+    <script>
+        function sprawdz(){
+            let x = parseInt(document.getElementById("in1").value)
+            let wynik = document.getElementById("wynik")
+            if(isNaN(x)){
+                alert("PODAJ POPRAWNY ROK")
+            }else{
+                if(x % 4 == 0 && x % 100 != 0){
+                    wynik.textContent = x+ " Jest rokiem przestępnym"
+                }else if(x % 4 == 0 && x % 400 == 0){
+                    wynik.textContent = x+ " Jest rokiem przestępnym"   
+                }else{
+                    wynik.textContent = x + " Nie jest rokiem przestępnym"
+                }
+            }
+        }
+        function przekatnaKwadratuCheck(){
+            let y = parseFloat(document.getElementById("in2").value)
+            let wynik2 = document.getElementById("w2")
+            let wynik3 = document.getElementById("w3")
+            let przk = Math.sqrt(Math.pow(y,2) + (Math.pow(y,2)))
+            wynik2.textContent = "Przekątna wynosi : " + przk
+            if(przk > (Math.pow(4,2))){
+                wynik3.textContent = "Przekątna jest większa od kwadratu liczby 4"
+            }else{
+                wynik3.textContent = "Przekątna nie jest większa od kwadratu liczby 4"
+            }
+        }
+
+
+        //napisz program który pobierze od użytkownika ( pole edycyjne ) rok i odpowie na pytanie za pomocą przycisku czy 
+        // podany rok jest rokiem przestępnym ( dzieli się przez 4 ,nie dzieli się przez 100 chyba że dzieli się przez 400)
+    </script>
+</body>
+</html>
